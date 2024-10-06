@@ -1,0 +1,39 @@
+body, h1, p, ul, li, section {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #1b1a1a;
+    background-image: url('pngtree-black-and-yellow-background-design-vector-picture-image_2025884.jpg');   
+    background-size: cover;
+    background-attachment: fixed; 
+}
+
+h2 {
+    font-size: 70px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #002b5c;
+    font-size: 30px;
+}
+
+p {
+    font-size: 24px;
+    line-height: 1.6;
+}
+
+/* Menú */
+.menu {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #010203;
+    z-index: 1000;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
