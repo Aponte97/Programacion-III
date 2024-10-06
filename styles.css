@@ -56,3 +56,12 @@ p {
 .menu ul li a:hover {
     color: #fdb813;
 }
+/* Secciones */
+section {
+    margin: auto 140px;
+    padding: 100px 20px;
+    min-height: 100vh;
+    background-color: #ffffff;
+    background-size: cover;
+    background-position: center;
+}
