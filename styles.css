@@ -119,3 +119,36 @@ td {
     background-color: #007BFF;
     color: white;
 }
+/* estilos para lista */
+.lista {
+    list-style: none; 
+    padding: 0; 
+}
+
+.lista li {
+    background: rgba(255, 255, 255, 0.2);
+    color: #343a40;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    transition: transform 0.3s;
+    position: relative;
+    display: flex; /*aqui Agreger flex para alinear el contenido */
+    align-items: center; 
+}
+
+.lista li:hover {
+    transform: translateY(-3px); /* Efecto al pasar el mouse para la lista de perfil ocupacional */
+}
+
+.lista li::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -15px; 
+    width: 10px;
+    height: 10px;
+    background-color: #007BFF;
+    border-radius: 2px; /* Cuadrado con bordes redondeados */
+    transform: translateY(-50%);
+}
