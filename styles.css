@@ -65,3 +65,57 @@ section {
     background-size: cover;
     background-position: center;
 }
+/* Botones */
+.boton-tabla {
+    background-color: #161513;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.boton-tabla:hover {
+    color: #fdb813;  /* Cambié el color del texto al color de fondo en hover */
+}
+
+/* Contenedor de tabla */
+.contenedor-boton {
+    text-align: left;
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+.contenedor-tabla {
+    display: none;
+    margin-top: 20px;
+}
+
+/* Mostrar tabla */
+.contenedor-tabla.mostrar {
+    display: block;
+}
+
+/* Tabla */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: auto; 
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+    padding: 10px; 
+}
+
+th {
+    background-color: #161616;
+    color: white;
+}
+
+td {
+    background-color: #007BFF;
+    color: white;
+}
