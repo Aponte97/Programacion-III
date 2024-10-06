@@ -152,3 +152,20 @@ td {
     border-radius: 2px; /* Cuadrado con bordes redondeados */
     transform: translateY(-50%);
 }
+.piedepagina {
+    width: 100%;
+    background-color: #010203;
+    color: rgb(145, 151, 156);
+}
+
+.p_horario {
+    font-size: 18px;
+    margin: auto;
+    width: 80%;
+}
+
+.imagen_pie {
+    margin: auto;
+    width: 80%;
+    opacity: 50%;
+}
