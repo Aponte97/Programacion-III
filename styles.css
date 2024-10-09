@@ -81,7 +81,7 @@ section {
 }
 
 #grupos-investigacion h2 {
-    font-size: 11px;
+    font-size: 30px;
     color: #1e3788;
     margin-bottom: 20px;
 }
@@ -112,6 +112,27 @@ section {
     font-size: 17px;
     margin-right: 20px;
 }
+
+.inscribirse-boton {
+    background-color: #1e3788;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.inscribirse-boton:hover {
+    background-color: #164e8d;
+    transform: scale(1.2);
+}
+
+.inscribirse-boton:active {
+    background-color: #0f3a6f;
+    transform: scale(0.98);
+}
+
 
 /* Sección del formulario */
 #formulario {
