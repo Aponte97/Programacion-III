@@ -22,9 +22,14 @@ h1 {
 }
 
 p {
-    font-size: 24px;
-    line-height: 1.6;
+    font-size: 20px; 
+    line-height: 1.5;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: justify;
+    padding: 0 30px;
 }
+
 
 /* Menú */
 .menu {
@@ -63,10 +68,10 @@ section {
     margin: auto 140px;
     padding: 100px 20px;
     min-height: 100vh;
-    background-color: #ffffff;
+    background-color: #eee5e5;
     background-size: cover;
     background-position: center;
-} /* Cerramos la llave que faltaba */
+} 
 
 /* Sección de Grupos de Investigación */
 #grupos-investigacion {
