@@ -64,6 +64,47 @@ section {
     background-color: #ffffff;
     background-size: cover;
     background-position: center;
+
+/* Sección de Grupos de Investigación */
+#grupos-investigacion {
+    background-color: #f0f0f0;
+    padding: 25px;
+    border-radius: 8px;
+}
+
+#grupos-investigacion h2 {
+    font-size: 11px;
+    color: #002b5c;
+    margin-bottom: 20px;
+}
+
+.grupo {
+    background-color: #e7f340;
+    border: 1px solid #050505;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+}
+
+.logo-grupo {
+    width: 200px; /* Ajusta el tamaño del logo */
+    height: auto;
+    margin-right: 20px; /* Espacio entre la imagen y el texto */
+}
+
+.grupo h3 {
+    font-size: 20px;
+    color: #022447;
+    margin-right: 20px;
+}
+
+.grupo p {
+    font-size: 17px;
+    margin-right: 20px;
+}
+
 }
 /* Botones */
 .boton-tabla {
