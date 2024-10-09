@@ -13,7 +13,7 @@
         <nav class="menu">
             <ul>
                 <li><a href="#seleccion  plan de estudios">Seleccion Plan de Estudios</a></li>
-                <li><a href="#grupos de investigacion">Grupos de Investigacion</a></li>
+                <li><a href="#grupos-investigacion">Grupos de Investigacion</a></li>
                 <li><a href="#formulario">Formulario</a></li>
                 <li><a href="#mision-vision">Misión, Visión y Perfil Ocupacional</a></li>
             </ul>
@@ -27,7 +27,7 @@
                 <i class="fas fa-arrow-down" id="icono1"></i> Primer Semestre 
             </button>
             <div class="contenedor-tabla" id="contenedorTabla1">
-                <table>
+                <table>git 
                     <thead>
                         <tr>
                             <th>Cod.</th>
@@ -339,7 +339,7 @@
             <p>Implementación de proyectos, planificación de proyectos tecnológicos, aplicación de principios de seguridad, y diseño de interfaces centradas en el usuario.</p>
         </div>
     </section>
-    <section id="grupos de investigacion">
+    <section id="grupos-investigacion">
         <h2>Grupos de Investigación</h2>
         <div class="grupo">
             <img src="https://www.uptc.edu.co/sitio/export/sites/default/portal/.content/article/imagenes_noticias/Grupo-Inv-Software-BANNER2.jpg_784404100.jpg" alt="Logo del Grupo 1" class="logo-grupo">
@@ -359,8 +359,46 @@
     </section>
 
 
-    <section id="formulario" class="seccion">
-       <center><h1>Formulario</h1></center> 
+    <section id="formulario">
+        <h2>Formulario de Inscripción - <span id="nombre-grupo"></span></h2>
+        <form id="inscripcionForm" onsubmit="return validarFormulario()">
+            <div>
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+    
+            <div>
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+    
+            <div>
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+            </div>
+    
+            <div>
+                <label for="programa">Programa de Estudios:</label>
+                <select id="programa" name="programa" required>
+                    <option value="">Seleccione un programa</option>
+                    <option value="tecnologia">Tecnología en Programación de Sistemas Informáticos</option>
+                </select>
+            </div>
+            
+            <div>
+                <label for="grupo">Grupo de Investigación:</label>
+                <select id="grupo" name="grupo" required>
+                    <option value="">Seleccione un grupo</option>
+                    <option value="GIS Software">Grupo de Investigación GIS Software</option>
+                    <option value="CETIN">CETIN - Ciencia Y Educación en Tecnología e Informática</option>
+                </select>
+            </div>
+    
+            <div>
+                <button type="submit">Enviar</button>
+                <button type="button" onclick="limpiarFormulario()">Limpiar</button>
+            </div>
+        </form>
     </section>
 
     <section id="mision-vision" class="seccion">
