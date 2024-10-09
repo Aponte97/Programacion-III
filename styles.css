@@ -12,7 +12,7 @@ body {
 }
 
 h2 {
-    font-size: 70px;
+    font-size: 30px;
 }
 
 h1 {
@@ -37,6 +37,7 @@ p {
     display: flex;
     justify-content: center;
 }
+
 .menu ul {
     list-style: none;
     display: flex;
@@ -56,6 +57,7 @@ p {
 .menu ul li a:hover {
     color: #fdb813;
 }
+
 /* Secciones */
 section {
     margin: auto 140px;
@@ -64,17 +66,18 @@ section {
     background-color: #ffffff;
     background-size: cover;
     background-position: center;
+} /* Cerramos la llave que faltaba */
 
 /* Sección de Grupos de Investigación */
 #grupos-investigacion {
-    background-color: #f0f0f0;
+    background-color: #f7f1f1;
     padding: 25px;
     border-radius: 8px;
 }
 
 #grupos-investigacion h2 {
     font-size: 11px;
-    color: #002b5c;
+    color: #1e3788;
     margin-bottom: 20px;
 }
 
@@ -89,9 +92,9 @@ section {
 }
 
 .logo-grupo {
-    width: 200px; /* Ajusta el tamaño del logo */
+    width: 200px;
     height: auto;
-    margin-right: 20px; /* Espacio entre la imagen y el texto */
+    margin-right: 20px;
 }
 
 .grupo h3 {
@@ -105,8 +108,78 @@ section {
     margin-right: 20px;
 }
 
+/* Sección del formulario */
+#formulario {
+    background-color: #eef124;
+    padding: 25px;
+    border-radius: 0px;
+    max-width: 600px;
+    margin: 20px auto;
+    }
+
+#formulario h2 {
+    font-size: 24px;
+    color: #002b5c;
+    text-align: center;
+    margin-bottom: 10px;
 }
-/* Botones */
+
+#formulario div {
+    margin-bottom: 15px;
+}
+
+#formulario label {
+    font-weight: bold;
+    color: #333;
+    display: block;
+    margin-bottom: 10px;
+}
+
+#formulario input[type="text"],
+#formulario input[type="email"],
+#formulario input[type="tel"],
+#formulario select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    background-color: #fff;
+    transition: border-color 0.3s;
+}
+
+#formulario input:focus,
+#formulario select:focus {
+    border-color: #1e3788;
+    outline: none;
+}
+
+#formulario button {
+    background-color: #1e3788;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+#formulario button:hover {
+    background-color: #164e8d;
+}
+
+#formulario button[type="button"] {
+    background-color: #ccc;
+    color: #333;
+}
+
+#formulario button[type="button"]:hover {
+    background-color: #aaa;
+}
+
+/* Botones para las tablas */
 .boton-tabla {
     background-color: #161513;
     color: #ffffff;
@@ -119,10 +192,9 @@ section {
 }
 
 .boton-tabla:hover {
-    color: #fdb813;  /* Cambié el color del texto al color de fondo en hover */
+    color: #fdb813;
 }
 
-/* Contenedor de tabla */
 .contenedor-boton {
     text-align: left;
     margin-top: 50px;
@@ -134,21 +206,20 @@ section {
     margin-top: 20px;
 }
 
-/* Mostrar tabla */
 .contenedor-tabla.mostrar {
     display: block;
 }
 
-/* Tabla */
+/* Estilos de tabla */
 table {
     border-collapse: collapse;
     width: 100%;
-    margin: auto; 
+    margin: auto;
 }
 
 table, th, td {
     border: 1px solid #ddd;
-    padding: 10px; 
+    padding: 10px;
 }
 
 th {
@@ -160,10 +231,11 @@ td {
     background-color: #007BFF;
     color: white;
 }
-/* estilos para lista */
+
+/* Lista */
 .lista {
-    list-style: none; 
-    padding: 0; 
+    list-style: none;
+    padding: 0;
 }
 
 .lista li {
@@ -174,25 +246,27 @@ td {
     border-radius: 8px;
     transition: transform 0.3s;
     position: relative;
-    display: flex; /*aqui Agreger flex para alinear el contenido */
-    align-items: center; 
+    display: flex;
+    align-items: center;
 }
 
 .lista li:hover {
-    transform: translateY(-3px); /* Efecto al pasar el mouse para la lista de perfil ocupacional */
+    transform: translateY(-3px);
 }
 
 .lista li::before {
     content: '';
     position: absolute;
     top: 50%;
-    left: -15px; 
+    left: -15px;
     width: 10px;
     height: 10px;
     background-color: #007BFF;
-    border-radius: 2px; /* Cuadrado con bordes redondeados */
+    border-radius: 2px;
     transform: translateY(-50%);
 }
+
+/* Pie de página */
 .piedepagina {
     width: 100%;
     background-color: #010203;
@@ -210,6 +284,7 @@ td {
     width: 80%;
     opacity: 50%;
 }
+
 @media (max-width: 768px) {
     section {
         margin: auto 20px;
@@ -233,7 +308,6 @@ td {
         margin: 10px 0;
     }
 
-    /* Estilos de la tabla */
     table {
         width: 100%;
     }
